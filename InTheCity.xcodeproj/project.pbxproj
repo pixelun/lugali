@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		246867115B032775AB6B0142 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7A92858833C662FA8ED1755 /* Assets.xcassets */; };
 		47ECD3335E81897E7332A6D7 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E733700DEC54F716E4EA719F /* NotificationService.swift */; };
+		5DEF8E70478E59FE0FCAC14C /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 68776EE77C11A63CF41E794C /* PrivacyInfo.xcprivacy */; };
 		5E9CAE382D5CD35D8EA171AF /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7222D72565C2BF0426BD30F9 /* AppModel.swift */; };
 		7EC85AAAA1E1847D06896F3C /* VisitStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = D58FEE3B91C1613107C680C8 /* VisitStore.swift */; };
 		83115C7431A6219A049DB7BA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE44AA88B54073C52A764E5 /* HomeView.swift */; };
@@ -33,6 +34,7 @@
 /* Begin PBXFileReference section */
 		1FDE05080CAEACF5D0C4EF3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		66E3E7DF4E95876521EDD396 /* InTheCity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InTheCity.entitlements; sourceTree = "<group>"; };
+		68776EE77C11A63CF41E794C /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		70CC0C6C4F1D4504DC4299CE /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		7222D72565C2BF0426BD30F9 /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
 		8454C1F07205FCC5694622E0 /* InTheCityApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InTheCityApp.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				CC2DFFE3A9A9642450E861A6 /* LocationService.swift */,
 				9039E3673CEFD99244AE7272 /* Models.swift */,
 				E733700DEC54F716E4EA719F /* NotificationService.swift */,
+				68776EE77C11A63CF41E794C /* PrivacyInfo.xcprivacy */,
 				70CC0C6C4F1D4504DC4299CE /* Theme.swift */,
 				D58FEE3B91C1613107C680C8 /* VisitStore.swift */,
 			);
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				246867115B032775AB6B0142 /* Assets.xcassets in Resources */,
+				5DEF8E70478E59FE0FCAC14C /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

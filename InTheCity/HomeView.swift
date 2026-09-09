@@ -13,6 +13,7 @@ struct HomeView: View {
                     statusBlock
                     historyButton
                     currentLocation
+                    legalLinks
 #if DEBUG
                     simulationPanel
 #endif
@@ -124,6 +125,18 @@ struct HomeView: View {
         .padding(.top, 18)
     }
 
+    private var legalLinks: some View {
+        HStack(spacing: 20) {
+            Link("Privacidade", destination: LegalPages.privacy)
+            Link("Suporte", destination: LegalPages.support)
+        }
+        .font(.subheadline.weight(.semibold))
+        .foregroundStyle(Palette.accent)
+        .padding(.horizontal, 14)
+        .padding(.top, 8)
+        .accessibilityElement(children: .contain)
+    }
+
 #if DEBUG
     private var simulationPanel: some View {
         VStack(alignment: .leading, spacing: 12) {
@@ -196,6 +209,11 @@ struct HomeView: View {
         if model.currentPlace == nil { return "Buscando uma localização confiável…" }
         return "Ativado. Aviso silencioso quando houver uma localização nova e confiável, com intervalo mínimo de cerca de 10 minutos."
     }
+}
+
+private enum LegalPages {
+    static let privacy = URL(string: "https://pixelun.github.io/lugali/privacidade.html")!
+    static let support = URL(string: "https://pixelun.github.io/lugali/suporte.html")!
 }
 
 #if DEBUG
