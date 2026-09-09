@@ -15,61 +15,116 @@
 </head>
 <body>
   <a class="skip" href="#conteudo">Ir ao conteúdo</a>
-  <header class="mast">
-    <div class="shell mast-bar">
-      <a class="brand" href="index.html">
+  <header class="topnav" id="topo">
+    <div class="container topnav-inner">
+      <a class="logo" href="index.html">
         <img src="assets/mark.svg" width="40" height="40" alt="">
-        <span>Lugali</span>
+        Lugali
       </a>
-      <nav class="nav" aria-label="Principal">
-        <a href="index.html" aria-current="page">Início</a>
+      <nav aria-label="Principal">
+        <a href="#recursos">Como funciona</a>
+        <a href="#no-mapa">No mapa</a>
         <a href="privacidade.html">Privacidade</a>
         <a href="suporte.html">Suporte</a>
       </nav>
+      <a class="btn btn-secondary" href="#baixar">App Store</a>
     </div>
   </header>
 
   <main id="conteudo">
-    <section class="hero shell" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="opener">Um aplicativo simples para matar uma curiosidade na viagem: em que cidade estamos agora?</p>
-        <h1 id="hero-title">Cada cidade, no momento certo.</h1>
-        <p class="lede">Mostra cidade, estado e país, sem sair do aplicativo de mapas.</p>
-      </div>
-      <figure class="hero-frame">
-        <img src="assets/hero.jpg" width="1024" height="1536" alt="Casal no carro mostra o Lugali aberto em Foz do Iguaçu, com a placa de São José dos Pinhais ao fundo.">
-      </figure>
-    </section>
-
-    <section class="moment shell" aria-labelledby="maps-title">
-      <div class="moment-copy">
-        <h2 id="maps-title">Continue a rota. A cidade aparece.</h2>
-        <p class="lede">Receba um aviso discreto sem sair do aplicativo de mapas.</p>
-      </div>
-      <div class="phone">
-        <img class="phone-screen" src="assets/maps.jpg" width="1320" height="2868" alt="Mapas com a rota entre Foz do Iguaçu e Puerto Iguazú.">
-        <img class="phone-banner" src="assets/banner.png" width="2052" height="464" alt="Aviso do Lugali: São José dos Pinhais, PR, Brasil.">
+    <section class="section">
+      <div class="container hero-split">
+        <div class="hero-copy">
+          <p class="eyebrow">App para iPhone</p>
+          <p class="opener">Um aplicativo simples para matar uma curiosidade na viagem: em que cidade estamos agora?</p>
+          <h1>Cada cidade, no momento certo.</h1>
+          <p class="lead" style="margin-top: 20px;">Mostra cidade, estado e país, sem sair do aplicativo de mapas.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#baixar">Baixar no iPhone</a>
+            <a class="btn btn-ghost btn-arrow" href="#no-mapa">Ver o aviso na rota</a>
+          </div>
+        </div>
+        <figure class="hero-photo">
+          <img src="assets/hero.jpg" width="1024" height="1536" alt="Casal no carro mostra o Lugali aberto em Foz do Iguaçu, com a placa de São José dos Pinhais ao fundo.">
+        </figure>
       </div>
     </section>
 
-    <section class="moment moment-flip shell" aria-labelledby="history-title">
-      <div class="moment-copy">
-        <h2 id="history-title">Sua viagem, cidade por cidade.</h2>
-        <p class="lede">Relembre os lugares identificados durante o caminho.</p>
+    <section class="section" id="recursos">
+      <div class="container" style="display: flex; flex-direction: column; gap: 56px;">
+        <div class="features-intro">
+          <p class="eyebrow">Na viagem</p>
+          <h2>A cidade aparece. O mapa continua.</h2>
+        </div>
+        <div class="grid-3">
+          <div class="feature">
+            <div class="feature-mark">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 8 3 8H3s3-1 3-8"/><path d="M10 19a2 2 0 0 0 4 0"/></svg>
+            </div>
+            <h3>Aviso silencioso</h3>
+            <p>Banner nativo do iPhone com cidade, estado ou província, e país. Sem som, sem abrir o app, sem cortar o áudio da rota.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-mark">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6l1.4 1.4M17 17l1.4 1.4M18.4 5.6 17 7M7 17l-1.4 1.4"/></svg>
+            </div>
+            <h3>Sem sair da rota</h3>
+            <p>Convive com Mapas, Waze ou Google Maps. O aviso não se sobrepõe à navegação e não precisa que você volte ao Lugali.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-mark">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 7h16M4 12h10M4 17h16"/></svg>
+            </div>
+            <h3>Cidade por cidade</h3>
+            <p>O histórico fica no próprio iPhone. Sem conta, sem servidor e sem trilha contínua de GPS.</p>
+          </div>
+        </div>
       </div>
-      <div class="phone">
-        <img class="phone-screen" src="assets/history.png" width="1320" height="2868" alt="Histórico do Lugali com Foz do Iguaçu, Puerto Iguazú e Santa Terezinha de Itaipu.">
+    </section>
+
+    <section class="section" id="no-mapa">
+      <div class="container moment-split">
+        <div class="moment-copy">
+          <p class="eyebrow">No mapa</p>
+          <h2>Continue a rota. A cidade aparece.</h2>
+          <p class="lead" style="margin-top: 18px;">Receba um aviso discreto sem sair do aplicativo de mapas.</p>
+        </div>
+        <div class="phone-shot">
+          <img src="assets/rota.png" width="780" height="1694" alt="Aviso do Lugali sobre o mapa: São José dos Pinhais, PR, Brasil.">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="historico">
+      <div class="container moment-split flip">
+        <div class="moment-copy">
+          <p class="eyebrow">Histórico</p>
+          <h2>Sua viagem, cidade por cidade.</h2>
+          <p class="lead" style="margin-top: 18px;">Relembre os lugares identificados durante o caminho.</p>
+        </div>
+        <div class="phone">
+          <img class="phone-screen" src="assets/history.png" width="1320" height="2868" alt="Histórico do Lugali com Foz do Iguaçu, Puerto Iguazú e Santa Terezinha de Itaipu.">
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-strip" id="baixar">
+      <div class="container" style="max-width: 600px;">
+        <h2>Instale no iPhone.</h2>
+        <p class="lead">O Lugali é um app da Pixelun. A instalação acontece na App Store, não nesta página.</p>
+        <a class="btn btn-primary" href="https://www.apple.com/br/app-store/" target="_blank" rel="noopener noreferrer">Abrir a App Store</a>
       </div>
     </section>
   </main>
 
-  <footer class="colophon">
-    <div class="shell colophon-bar">
-      <p>Lugali é um app para iPhone da Pixelun Consultoria Ltda.</p>
-      <p class="colophon-links">
+  <footer class="pagefoot">
+    <div class="container pagefoot-inner">
+      <span>Lugali é um app para iPhone da Pixelun Consultoria Ltda.</span>
+      <span>
         <a href="privacidade.html">Privacidade</a>
+        ·
         <a href="suporte.html">Suporte</a>
-      </p>
+      </span>
     </div>
   </footer>
 </body>
