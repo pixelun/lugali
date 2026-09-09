@@ -1,0 +1,77 @@
+{
+  "locale": "pt-BR",
+  "size": "6.9",
+  "width": 1320,
+  "height": 2868,
+  "format": "PNG",
+  "alpha": false,
+  "color_space": "sRGB",
+  "headline": "Cada cidade, no momento certo.",
+  "subhead": "O Lugali identifica onde você está e mostra cidade, estado e país.",
+  "backgrounds": {
+    "editorial": "#0B57F0",
+    "mapa-imersivo": "mapa full bleed + painel #0B57F0",
+    "rota-minimalista": "#FFFFFF"
+  },
+  "accent": "#FFD60A",
+  "icon": "InTheCity/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+  "screenshots": [
+    {
+      "file": "conceitos/01-editorial.png",
+      "model": "editorial",
+      "headline": "Cada cidade, no momento certo.",
+      "subhead": "O Lugali identifica onde você está e mostra cidade, estado e país.",
+      "origin": "raw/01-cidade-atual.png",
+      "route": "Brasil–Argentina",
+      "cities": [
+        "Foz do Iguaçu",
+        "Puerto Iguazú"
+      ],
+      "warning": "aviso Lugali",
+      "signature": {
+        "icon": "InTheCity/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+        "name": "Lugali"
+      }
+    },
+    {
+      "file": "conceitos/02-mapa-imersivo.png",
+      "model": "mapa-imersivo",
+      "headline": "Cada cidade, no momento certo.",
+      "subhead": "O Lugali identifica onde você está e mostra cidade, estado e país.",
+      "origin": "raw/02-maps-clean.png",
+      "route": "Brasil–Argentina",
+      "cities": [
+        "Foz do Iguaçu",
+        "Puerto Iguazú"
+      ],
+      "warning": "aviso Lugali",
+      "signature": {
+        "icon": "InTheCity/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+        "name": "Lugali"
+      }
+    },
+    {
+      "file": "conceitos/03-rota-minimalista.png",
+      "model": "rota-minimalista",
+      "headline": "Cada cidade, no momento certo.",
+      "subhead": "O Lugali identifica onde você está e mostra cidade, estado e país.",
+      "origin": "raw/03-historico.png",
+      "route": "Brasil–Argentina",
+      "cities": [
+        "Foz do Iguaçu",
+        "Puerto Iguazú"
+      ],
+      "warning": "aviso Lugali",
+      "signature": {
+        "icon": "InTheCity/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+        "name": "Lugali"
+      }
+    }
+  ],
+  "commands": [
+    "mkdir -p docs/screenshots-puros",
+    "cp -p docs/app-store/pt-BR/6.9/raw/*.png docs/screenshots-puros/",
+    "/usr/bin/python3 /Volumes/KINGSTON/app-in-the-city/docs/app-store/pt-BR/6.9/compose-concepts.py"
+  ],
+  "tool": "Python Pillow (/usr/bin/python3) + SFNS variable font"
+}

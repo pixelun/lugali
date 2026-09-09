@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <!-- Lugali symbol (Lugiro). Deterministic construction, no gradients.
+       Square cobalt field. Cream ring (outer 356 / inner 240)
+       opened 72deg at 3 o'clock, round caps r=58,
+       mango disc r=90 on the arc centerline at the opening. -->
+  <rect width="1024" height="1024" fill="#0B57F0"/>
+  <circle cx="512" cy="512" r="356.000" fill="#FFF7E8"/>
+  <circle cx="512" cy="512" r="240.000" fill="#0B57F0"/>
+  <polygon points="512,512 932.689,817.648 932.689,206.352" fill="#0B57F0"/>
+  <circle cx="753.087" cy="687.160" r="58.000" fill="#FFF7E8"/>
+  <circle cx="753.087" cy="336.840" r="58.000" fill="#FFF7E8"/>
+  <circle cx="810.000" cy="512.000" r="90.000" fill="#FFC21C"/>
+</svg>

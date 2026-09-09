@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" fill="none" aria-hidden="true">
+  <mask id="lugali-cut">
+    <rect width="1024" height="1024" fill="white"/>
+    <circle cx="512" cy="512" r="240" fill="black"/>
+    <polygon points="512,512 932.689,817.648 932.689,206.352" fill="black"/>
+  </mask>
+  <circle cx="512" cy="512" r="356" fill="#FFF7E8" mask="url(#lugali-cut)"/>
+  <circle cx="753.087" cy="687.160" r="58" fill="#FFF7E8"/>
+  <circle cx="753.087" cy="336.840" r="58" fill="#FFF7E8"/>
+  <circle cx="810" cy="512" r="90" fill="#FFC21C"/>
+</svg>

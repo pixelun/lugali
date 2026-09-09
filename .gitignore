@@ -1,0 +1,13 @@
+.DS_Store
+site/_preview/
+docs/grok-*.md
+xcuserdata/
+DerivedData/
+.build/
+*.xcuserstate
+*.xccheckout
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM

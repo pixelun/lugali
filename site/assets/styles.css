@@ -1,0 +1,411 @@
+:root {
+  --cobalt: #0c57f0;
+  --cream: #fff7e8;
+  --mango: #ffc21c;
+  --white: #ffffff;
+  --ink: #1c1c1e;
+  --muted: #3a3a3c;
+  --display: "Pridi", Palatino, "Palatino Linotype", serif;
+  --sans: "Inter", system-ui, sans-serif;
+  --shell: 1080px;
+  --gutter: 24px;
+  --phone-w: 260px;
+  --phone-h: 540px;
+  --phone-r: 32px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--cobalt);
+  color: var(--white);
+  font-family: var(--sans);
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+.skip {
+  position: absolute;
+  left: 12px;
+  top: -40px;
+  z-index: 20;
+  background: var(--white);
+  color: var(--ink);
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.skip:focus {
+  top: 12px;
+}
+
+.shell {
+  width: 100%;
+  max-width: calc(var(--shell) + var(--gutter) * 2);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+  overflow-x: hidden;
+}
+
+.mast-bar,
+.colophon-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 24px;
+}
+
+.mast-bar {
+  padding-top: 20px;
+  padding-bottom: 8px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-family: var(--display);
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+.brand img {
+  width: 40px;
+  height: 40px;
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+
+.nav a {
+  text-decoration: none;
+  color: rgb(255 255 255 / 0.82);
+}
+
+.nav a:hover,
+.nav a[aria-current="page"] {
+  color: var(--white);
+}
+
+.nav a[aria-current="page"] {
+  box-shadow: 0 1px 0 var(--cream);
+}
+
+.hero-copy,
+.moment-copy {
+  min-width: 0;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 26rem) minmax(0, 28rem);
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px 56px;
+  padding-top: 48px;
+  padding-bottom: 72px;
+}
+
+.opener {
+  margin: 0 0 16px;
+  max-width: min(28em, 100%);
+  font-size: 1.0625rem;
+  line-height: 1.45;
+  color: rgb(255 255 255 / 0.88);
+  overflow-wrap: break-word;
+  text-wrap: pretty;
+}
+
+.hero h1,
+.moment h2 {
+  margin: 0;
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(2.35rem, 4.2vw, 4rem);
+  line-height: 1.08;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+}
+
+.lede {
+  margin: 18px 0 0;
+  max-width: min(28em, 100%);
+  font-size: 1.125rem;
+  line-height: 1.45;
+  font-weight: 400;
+  overflow-wrap: break-word;
+  text-wrap: pretty;
+}
+
+.hero-frame {
+  margin: 0;
+  width: 100%;
+  height: min(520px, 62vh);
+  overflow: hidden;
+  border-radius: 32px;
+}
+
+.hero-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 58%;
+}
+
+.moment {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) var(--phone-w);
+  gap: 40px 72px;
+  align-items: center;
+  padding-bottom: 80px;
+}
+
+.moment-flip {
+  grid-template-columns: var(--phone-w) minmax(0, 1fr);
+}
+
+.moment-flip .phone {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.moment-flip .moment-copy {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.phone {
+  position: relative;
+  width: var(--phone-w);
+  height: var(--phone-h);
+  border-radius: var(--phone-r);
+  overflow: hidden;
+  background: var(--white);
+  justify-self: center;
+}
+
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.phone-banner {
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  width: 90%;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.colophon {
+  padding: 28px 0 48px;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.colophon p {
+  margin: 0;
+}
+
+.colophon a {
+  text-decoration: none;
+  color: rgb(255 255 255 / 0.82);
+}
+
+.colophon a:hover {
+  color: var(--white);
+}
+
+.colophon-links {
+  display: flex;
+  gap: 20px;
+}
+
+.intro {
+  padding: 36px 0 48px;
+}
+
+.intro h1 {
+  margin: 0;
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(2.25rem, 5vw, 3.25rem);
+  line-height: 1.1;
+  max-width: 16ch;
+}
+
+.intro .lede {
+  max-width: 32em;
+  color: var(--white);
+}
+
+.paper {
+  background: var(--white);
+  color: var(--ink);
+}
+
+.paper-body {
+  padding: 56px var(--gutter) 96px;
+}
+
+.paper-body .shell {
+  max-width: calc(var(--shell) + var(--gutter) * 2);
+}
+
+.paper-body .shell > * {
+  max-width: 40rem;
+}
+
+.paper-body h2 {
+  margin: 2.2em 0 0.55em;
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 1.2;
+}
+
+.paper-body h2:first-child {
+  margin-top: 0;
+}
+
+.paper-body p,
+.paper-body li,
+.faq dd {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--muted);
+  overflow-wrap: break-word;
+}
+
+.paper-body p {
+  margin: 0 0 1em;
+}
+
+.paper-body ul {
+  margin: 0 0 1.2em;
+  padding-left: 1.2em;
+}
+
+.paper-body strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.paper-body a {
+  color: var(--cobalt);
+}
+
+.updated {
+  margin-top: 2.5em;
+  font-size: 0.95rem;
+  color: #6e6e73;
+}
+
+.faq dt {
+  margin-top: 1.5em;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.faq dd {
+  margin: 0.4em 0 0;
+}
+
+.contact-block {
+  margin-top: 1em;
+}
+
+@media (max-width: 800px) {
+  .mast-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .hero,
+  .moment,
+  .moment-flip {
+    grid-template-columns: 1fr;
+  }
+
+  .moment-flip .phone,
+  .moment-flip .moment-copy {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .hero {
+    padding-top: 28px;
+    padding-bottom: 48px;
+    gap: 28px;
+  }
+
+  .hero-frame {
+    height: 380px;
+  }
+
+  .hero h1,
+  .moment h2 {
+    font-size: clamp(2.1rem, 8.5vw, 2.75rem);
+  }
+
+  .opener,
+  .lede {
+    font-size: 1rem;
+    max-width: 20rem;
+  }
+
+  .moment {
+    padding-bottom: 56px;
+    gap: 28px;
+  }
+
+  .phone {
+    width: min(var(--phone-w), 100%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--cream);
+  outline-offset: 3px;
+}
+
+.paper :focus-visible {
+  outline-color: var(--cobalt);
+}

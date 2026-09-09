@@ -1,0 +1,10 @@
+{
+  "Simulator Target Bundle": "com.pixelun.Lugali",
+  "aps": {
+    "alert": {
+      "title": "Foz do Iguaçu",
+      "body": "Paraná · Brasil"
+    },
+    "interruption-level": "time-sensitive"
+  }
+}

@@ -1,0 +1,68 @@
+name: InTheCity
+options:
+  bundleIdPrefix: com.pixelun
+  deploymentTarget:
+    iOS: "18.0"
+  createIntermediateGroups: true
+  xcodeVersion: "16.0"
+configs:
+  Debug: debug
+  Release: release
+settings:
+  base:
+    IPHONEOS_DEPLOYMENT_TARGET: "18.0"
+    SWIFT_VERSION: "5.0"
+    TARGETED_DEVICE_FAMILY: "1"
+    DEVELOPMENT_TEAM: KR6USYKL8G
+    CODE_SIGN_STYLE: Automatic
+    SUPPORTS_MACCATALYST: NO
+    SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: NO
+    SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD: NO
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+targets:
+  InTheCity:
+    type: application
+    platform: iOS
+    sources:
+      - path: InTheCity
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.pixelun.Lugali
+        PRODUCT_NAME: InTheCity
+        MARKETING_VERSION: "0.1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        GENERATE_INFOPLIST_FILE: NO
+        INFOPLIST_FILE: InTheCity/Info.plist
+        CODE_SIGN_ENTITLEMENTS: InTheCity/InTheCity.entitlements
+        TARGETED_DEVICE_FAMILY: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        SWIFT_EMIT_LOC_STRINGS: YES
+  InTheCityTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: InTheCityTests
+    dependencies:
+      - target: InTheCity
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.pixelun.LugaliTests
+        GENERATE_INFOPLIST_FILE: YES
+        BUNDLE_LOADER: "$(TEST_HOST)"
+        TEST_HOST: "$(BUILT_PRODUCTS_DIR)/InTheCity.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/InTheCity"
+        IPHONEOS_DEPLOYMENT_TARGET: "18.0"
+        TARGETED_DEVICE_FAMILY: "1"
+schemes:
+  InTheCity:
+    build:
+      targets:
+        InTheCity: all
+        InTheCityTests: [test]
+    run:
+      config: Debug
+    test:
+      config: Debug
+      gatherCoverageData: false
+      targets:
+        - InTheCityTests

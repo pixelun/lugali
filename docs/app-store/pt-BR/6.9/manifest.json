@@ -1,0 +1,62 @@
+{
+  "locale": "pt-BR",
+  "size": "6.9",
+  "width": 1320,
+  "height": 2868,
+  "format": "PNG",
+  "alpha": false,
+  "color_space": "sRGB",
+  "background": {
+    "white": "#FFFFFF",
+    "lugali_blue": "#0B57F0"
+  },
+  "icon": "InTheCity/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+  "rejected": [
+    "Simulação",
+    "Simulacao",
+    "População",
+    "Populacao",
+    "In The City",
+    "CityWatch",
+    "a cada 10 minutos"
+  ],
+  "screenshots": [
+    {
+      "file": "final/01-cidade-atual.png",
+      "headline": "Descubra a cidade atual",
+      "subhead": "Cidade, estado e país em um só lugar.",
+      "origin": "raw/01-cidade-atual.png",
+      "origin_source": "/tmp/lugali-appstore/raw2/01-cidade-atual.png",
+      "overlay": null
+    },
+    {
+      "file": "final/02-aviso-na-rota.png",
+      "headline": "Receba o aviso durante a rota",
+      "subhead": "Veja a cidade sem sair do mapa.",
+      "origin": "raw/02-maps-clean.png",
+      "origin_source": "/tmp/lugali-appstore/maps-burst/maps-clean.png",
+      "overlay": {
+        "kind": "ios-notification-banner",
+        "app": "Lugali",
+        "title": "Foz do Iguaçu",
+        "body": "PR · Brasil",
+        "icon": "InTheCity/Assets.xcassets/AppIcon.appiconset/AppIcon.png"
+      }
+    },
+    {
+      "file": "final/03-historico.png",
+      "headline": "Relembre o caminho",
+      "subhead": "As cidades visitadas ficam salvas no seu iPhone.",
+      "origin": "raw/03-historico.png",
+      "origin_source": "/tmp/lugali-appstore/raw2/03-historico.png",
+      "overlay": null
+    }
+  ],
+  "commands": [
+    "cp /tmp/lugali-appstore/raw2/01-cidade-atual.png /Volumes/KINGSTON/app-in-the-city/docs/app-store/pt-BR/6.9/raw/01-cidade-atual.png",
+    "cp /tmp/lugali-appstore/maps-burst/maps-clean.png /Volumes/KINGSTON/app-in-the-city/docs/app-store/pt-BR/6.9/raw/02-maps-clean.png",
+    "cp /tmp/lugali-appstore/raw2/03-historico.png /Volumes/KINGSTON/app-in-the-city/docs/app-store/pt-BR/6.9/raw/03-historico.png",
+    "/usr/bin/python3 /Volumes/KINGSTON/app-in-the-city/docs/app-store/pt-BR/6.9/compose.py"
+  ],
+  "tool": "Python Pillow (/usr/bin/python3) + SFNS variable font"
+}
